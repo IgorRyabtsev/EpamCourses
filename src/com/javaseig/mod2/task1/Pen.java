@@ -5,20 +5,16 @@ package com.javaseig.mod2.task1;
  */
 
 public class Pen {
-    String firm;
-    String color;
-    double thickness;
-    double price;
+    private final String firm;
+    private String color;
+    private double thickness;
+    private double price;
 
     public Pen(String firm, String color, double thickness, double price) {
         this.firm = firm;
         this.color = color;
         this.thickness = thickness;
         this.price = price;
-    }
-
-    public void setFirm(String firm) {
-        this.firm = firm;
     }
 
     public void setColor(String color) {
