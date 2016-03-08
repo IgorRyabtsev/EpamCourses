@@ -8,6 +8,7 @@ import java.util.Map;
 /**
  * Created by igor on 08.03.16.
  */
+
 public class Group <T extends Number> {
     private Map<Student,ArrayList<T>> studinfo;
 
