@@ -24,15 +24,14 @@ public class GroupsTest {
         Groups g = new Groups();
 
         g.addStudent(Subject.MATH,s1);
-        g.addStudentMark(Subject.MATH,s2,4);
-        g.addStudentMark(Subject.PROGRAMMING,s3,2.5);
-        g.addStudentMark(Subject.MATH,s2,5);
+        g.addStudentMark(Subject.MATH,s2,4.5);
+        g.addStudentMark(Subject.PROGRAMMING,s3,5);
+        g.addStudentMark(Subject.MATH,s2,1.55);
 
         assertTrue(g.findStudent(s1).get(Subject.MATH).size()==0 && (g.findStudent(s2).get(Subject.MATH).size()==2
-                && g.findStudent(s2).get(Subject.MATH).get(0).equals(4) && g.findStudent(s2).get(Subject.MATH).get(1).equals(5))
+                && g.findStudent(s2).get(Subject.MATH).get(0).equals(4.5) && g.findStudent(s2).get(Subject.MATH).get(1).equals(1.55))
                 && (g.findStudent(s3).get(Subject.PROGRAMMING).size()==1
-                && g.findStudent(s3).get(Subject.PROGRAMMING).get(0).equals(2.5)) );
-
+                && g.findStudent(s3).get(Subject.PROGRAMMING).get(0).equals(5)) );
 
     }
     @Test
